@@ -4,10 +4,10 @@ import { buyCake, returnCake } from '../redux/cake/cakeActions'
 
 function HooksCakeContainer() {
     const numberOfCakes = useSelector((state) => {
-        return state.numberOfCakes
-    });
+        return state.cake.numberOfCakes
+    })
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
     return (
         <div style={{textAlign: 'center'}}>
