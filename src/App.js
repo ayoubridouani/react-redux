@@ -4,6 +4,7 @@ import IceCreamContainer from "./components/IceCreamContainer"
 import HooksIceCreamContainer from "./components/HooksIceCreamContainer"
 import CakeContainerWithPayload from "./components/CakeContainerWithPayload"
 import ItemContainer from "./components/ItemContainer"
+import UserContainer from "./components/UserContainer"
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <h1 style={{textAlign: 'center'}}>mapStateToProps and mapDispatchToProps with own props</h1>
       <ItemContainer cake />
       <ItemContainer iceCream />
+      <hr/>
+      <UserContainer/>
     </div>
   )
 }
